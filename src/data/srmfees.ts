@@ -12,7 +12,8 @@ export type FeeRecord = {
   notes?: string;
 };
 
-export const feeRecords: FeeRecord[] = [
+export const feeRecords = [
+
   {
     "id": "1",
     "collegeId": "srm-ktr",
@@ -2084,4 +2085,4 @@ export const feeRecords: FeeRecord[] = [
     "tuitionPerYear": "₹300,000 / year",
     "notes": "Fees vary by category/year. Confirm with official brochure."
   }
-];
+].filter(Boolean) as FeeRecord[];
